@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title> aaa</title>
+        <!--<script src="../js/vue/js/vue.min.js" type="text/javascript"></script>-->
+        <script src="D:\work\AmyWork\work\pl-scglpt-svc\src\main\resources\static\js\vue\js\vue.min.js"></script>  
+        <script src="D:\work\AmyWork\work\pl-scglpt-svc\src\main\resources\static\js\jquery-1.11.2.min.js"></script>
+        <!-- 引入CSS文件 -->  
+        <link rel="stylesheet" href="styles.css"> 
+</head>
+        <body>
+            <div id="home">
+            <div class="background-image"> 
+                <div class = "White-background">
+                <div class="tabs">  
+                    <button v-if = "loginType" class="tab-link" onclick="openTab(event, 'Tab1')">请输入</button>  
+                    <button v-if = "login" class="tab-link" onclick="openTab(event, 'Tab2')">请输入</button>  
+                    <button v-if = "Type" class="tab-link" onclick="openTab(event, 'Tab3')">请输入</button>  
+                    <div id="Tab1" class="tab-content">  
+                            <div class = "vertical-Layout">
+                            <div class = "title-top">请输入</div>
+                            <div class = "horizontal-Layout">
+                            <div class = "title">请输入:</div>
+                            <input class="my-input" type="text" v-model="user" placeholder="请输入">  
+                            </div>
+                            <div class = "horizontal-Layout">
+                            <div class = "title">请输入:</div>
+                            <input class="my-input" type="password" v-model="password" placeholder="请输入">  
+                            </div>
+                            <div class="button-center">
+                            <button class = "my-button" type="reset" @click="handleClick">请点击</button>
+                            </div>
+                            </div>
+                            </div>
+                            <div id="Tab2" class="tab-content">  
+                              <div class = "vertical-Layout">
+                                <div class = "title-top">请输入</div>
+                                <div class = "horizontal-Layout">
+                                <div class = "title">请输入:</div>
+                                <input class="my-input" type="text" v-model="user" placeholder="请输入">  
+                                </div>
+                                <div class = "horizontal-Layout">
+                                <div class = "title">请输入:</div>
+                                <input class="my-input" type="password" v-model="password" placeholder="请输入">  
+                                </div>
+                                <div class="button-center">
+                                <button class = "my-button" type="reset" @click="handleClick">请点击</button>
+                                </div>
+                                </div>
+                            </div>  
+                            
+                            <div id="Tab3" class="tab-content">  
+                              <div class = "vertical-Layout">
+                                <div class = "title-top">请输入</div>
+                                <div class = "horizontal-Layout">
+                                <div class = "title">请输入:</div>
+                                <input class="my-input" type="text" v-model="user" placeholder="请输入">  
+                                </div>
+                                <div class = "horizontal-Layout">
+                                <div class = "title">请输入:</div>
+                                <input class="my-input" type="password" v-model="password" placeholder="请输入">  
+                                </div>
+                                <div class="button-center">
+                                <button class = "my-button" type="reset" @click="handleClick">请点击</button>
+                                </div>
+                                </div>
+                            </div>  
+                          </div>  
+                  </div> 
+            </div>
+        </div>
+    <!-- 引入JS文件 -->  
+    <script src="logic.js"></script> 
+    </body>
+</html>

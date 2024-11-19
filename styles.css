@@ -1,0 +1,148 @@
+@font-face {  
+    font-family: '华文行楷'; /* 定义字体名称 */  
+    src: url('STXINGKA.TTF') format('truetype'); /* 字体文件路径和格式 */  
+    /* 可以添加多个src以支持多种格式和后备字体 */  
+    font-weight: normal; /* 字体粗细 */  
+    font-style: normal; /* 字体风格 */  
+}
+/* 自定义input元素的边框样式 */  
+input[type="text"] {  
+    border: 2px solid #ccc; /* 默认边框颜色和宽度 */  
+    padding: 10px; /* 内边距 */  
+    border-radius: 4px; /* 边框圆角 */  
+}  
+
+/* 自定义input元素在获得焦点时的边框颜色 */  
+input[type="text"]:focus {  
+    border-color: #544caf; /* 绿色边框 */  
+    outline: none; /* 移除默认的focus轮廓线 */  
+}  
+.my-input {  
+    padding: 10px;  
+    margin: 5px;  
+    border: 2px solid #cccccc;  
+    border-radius: 5px;  
+    margin-bottom:8px;
+    height: 32px; /* 根据需要设置高度 */  
+    width: 220px; /* 宽度可以是百分比或固定值 */  
+    font-family: '华文行楷', sans-serif;  
+}  
+.my-button {  
+background-color: #4c5eaf; /* 按钮背景颜色 */  
+border: none; /* 移除边框 */  
+color: white; /* 文本颜色 */  
+padding: 8px 8px; /* 内边距 */  
+text-align: center; /* 文本居中 */  
+text-decoration: none; /* 移除下划线（虽然按钮默认没有） */  
+display: inline-block; /* 将按钮设置为内联块级元素 */  
+font-size: 14px; /* 字体大小 */  
+margin: 4px 2px; /* 外边距 */  
+cursor: pointer; /* 鼠标悬停时显示指针 */  
+border-radius: 4px; /* 边框圆角 */  
+display: flex; /* 使用Flexbox布局 */  
+justify-content: center; /* 水平居中 */  
+align-items: center;     /* 垂直居中 */ 
+height: 32px; /* 根据需要设置高度 */  
+width: 80px; /* 宽度可以是百分比或固定值 */  
+font-family: '华文行楷', sans-serif;   
+} 
+.button-center{
+height: 32px; /* 根据需要设置高度 */  
+width: 100%; /* 宽度可以是百分比或固定值 */  
+display: flex; /* 使用Flexbox布局 */  
+justify-content: center; /* 水平居中 */  
+align-items: center;     /* 垂直居中 */ 
+}
+.my-button:focus {  
+outline: none;  
+box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);  
+} 
+.vertical-Layout{
+    display: flex; /* 使用Flexbox布局 */  
+    flex-direction: column; /* 设置主轴方向为垂直 */
+}
+.horizontal-Layout{
+    display: flex; /* 使用Flexbox布局 */   
+}
+.title{
+    display: flex; /* 使用Flexbox布局 */  
+    justify-content: center; /* 水平居中 */  
+    align-items: center;     /* 垂直居中 */   
+    margin-left: 8px; 
+    width: 60px;
+}
+.title-top{
+    margin-top: 8px;
+    font-size: 20px; /* 设置字体大小为20像素 */ 
+    font-weight: bold; /* 加粗文本 */   
+    display: flex;  
+    justify-content: center; /* 水平居中 */  
+    align-items: center;     /* 垂直居中 */ 
+}
+.background-image {  
+    background-image: url('background-img.png');  
+    height: 100%; /* 根据需要设置高度 */  
+    width: 100%; /* 宽度可以是百分比或固定值 */  
+    background-size: cover; /* 覆盖整个元素 */  
+    background-position: center; /* 图片居中 */  
+    display: flex; /* 使用Flexbox布局 */  
+    flex-direction: column; /* 设置主轴方向为垂直 */
+    gap: 20px; /* 添加间距 */ 
+    font-family: '华文行楷', sans-serif;  
+}  
+.White-background{
+    display: flex; /* 使用Flexbox布局 */   
+    position: absolute;  
+    top: 70%;  
+    left: 80%;  
+    transform: translate(-70%, -80%); /* 居中技巧 */ 
+    background-color: aliceblue;
+    height: 300px; /* 根据需要设置高度 */  
+    width: 300px; /* 宽度可以是百分比或固定值 */  
+    border-radius : 8px;
+}
+.tab-content {  
+    display: none;  
+    padding: 8px;  
+    border: 1px solid #ccc;  
+    border-top: none;  
+    clear: both; /* 清除浮动，确保内容区域在页签下方 */  
+  }  
+    
+  /* 激活的页签样式 */  
+  .tab-link.active {  
+    background-color: #ddd;  
+  }  
+    
+  /* 页签容器的样式 */  
+  .tabs {  
+    overflow: hidden;  
+    border: 1px solid #ccc;  
+    background-color: #f1f1f1;  
+  }  
+    
+  /* 页签按钮的样式 */  
+  .tab-link {  
+    background-color: inherit;  
+    float: left;  
+    border: none;  
+    outline: none;  
+    cursor: pointer;  
+    padding: 16px 16px;  
+    transition: background-color 0.3s;  
+    height: 32px;
+    display: flex;  
+    justify-content: center; /* 水平居中 */  
+    align-items: center;     /* 垂直居中 */ 
+    font-size: 14px;
+    width: 80px;
+  }  
+    
+  /* 鼠标悬停时的页签样式 */  
+  .tab-link:hover {  
+    background-color: #ddd;  
+  }
+  .tabs button.active {  
+    border-bottom: 2px solid #007bff; /* 为激活的页签添加下划线 */  
+    color: #007bff; /* 可选，改变激活页签的文字颜色 */  
+  } 
